@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophia Chat Widget — Demo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f7fa; color: #333; line-height: 1.6;
+    }
+    .demo-page {
+      max-width: 800px; margin: 0 auto; padding: 60px 24px;
+    }
+    h1 { font-size: 32px; color: #1a3a5c; margin-bottom: 8px; }
+    .subtitle { color: #666; font-size: 18px; margin-bottom: 40px; }
+    .card {
+      background: white; border-radius: 12px; padding: 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06); margin-bottom: 24px;
+    }
+    .card h2 { font-size: 20px; color: #1a3a5c; margin-bottom: 12px; }
+    .card p { color: #555; margin-bottom: 12px; }
+    code {
+      background: #f0f4f8; padding: 2px 8px; border-radius: 4px;
+      font-size: 13px; color: #C41230;
+    }
+    pre {
+      background: #1a3a5c; color: #e8ecf0; padding: 16px 20px;
+      border-radius: 8px; overflow-x: auto; font-size: 13px;
+      line-height: 1.5; margin-top: 8px;
+    }
+    .arrow {
+      text-align: center; padding: 40px; color: #999; font-size: 14px;
+    }
+    .arrow span { font-size: 32px; display: block; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <div class="demo-page">
+    <h1>🏠 Sophia Chat Widget</h1>
+    <p class="subtitle">AI Mortgage Assistant by American Financial Network</p>
+
+    <div class="card">
+      <h2>About This Demo</h2>
+      <p>This page demonstrates the embeddable Sophia chat widget. Click the blue chat bubble in the bottom-right corner to start a conversation.</p>
+      <p>Sophia can help with:</p>
+      <ul style="margin-left: 20px; color: #555;">
+        <li>General mortgage questions</li>
+        <li>Quick pre-qualification estimates</li>
+        <li>Full loan applications (URLA)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Embed on Your Site</h2>
+      <p>Add this single line before <code>&lt;/body&gt;</code>:</p>
+      <pre>&lt;script
+  src="sophia-widget.js"
+  data-webhook-url="https://afninc.app.n8n.cloud/webhook/sophia-chat"
+  data-lo-id="your-lo-username"
+&gt;&lt;/script&gt;</pre>
+    </div>
+
+    <div class="card">
+      <h2>Configuration</h2>
+      <p><code>data-webhook-url</code> — Your n8n webhook endpoint</p>
+      <p><code>data-lo-id</code> — Loan officer ID for routing (optional)</p>
+    </div>
+
+    <div class="arrow">
+      <span>↘</span>
+      Click the chat bubble to try it out
+    </div>
+  </div>
+
+  <!-- Sophia Chat Widget -->
+  <script
+    src="sophia-widget.js"
+    data-webhook-url="https://afninc.app.n8n.cloud/webhook/sophia-chat"
+    data-lo-id=""
+  ></script>
+</body>
+</html>
