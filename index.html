@@ -56,16 +56,17 @@
       <h2>Embed on Your Site</h2>
       <p>Add this single line before <code>&lt;/body&gt;</code>:</p>
       <pre>&lt;script
-  src="sophia-widget.js"
+  src="https://imnovabot.github.io/sophia-widget/sophia-widget.js"
   data-webhook-url="https://afninc.app.n8n.cloud/webhook/sophia-chat"
-  data-lo-id="your-lo-username"
+  data-lo-id="YOUR_LO_ROW_ID"
 &gt;&lt;/script&gt;</pre>
     </div>
 
     <div class="card">
       <h2>Configuration</h2>
-      <p><code>data-webhook-url</code> — Your n8n webhook endpoint</p>
-      <p><code>data-lo-id</code> — Loan officer ID for routing (optional)</p>
+      <p><code>src</code> — Hosted widget script (do not change)</p>
+      <p><code>data-webhook-url</code> — Sophia webhook endpoint (do not change)</p>
+      <p><code>data-lo-id</code> — <strong>Required.</strong> The loan officer's row ID from the LO Lookup table. Contact your admin for your ID.</p>
     </div>
 
     <div class="arrow">
