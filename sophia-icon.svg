@@ -1,31 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#8B1A4A"/>
-      <stop offset="50%" style="stop-color:#5C2D82"/>
-      <stop offset="100%" style="stop-color:#1A3A8C"/>
+      <stop offset="0%" style="stop-color:#1A1A1A"/>
+      <stop offset="50%" style="stop-color:#2A2A2A"/>
+      <stop offset="100%" style="stop-color:#C8963E"/>
     </linearGradient>
     <clipPath id="circle-clip">
       <circle cx="100" cy="100" r="100"/>
     </clipPath>
   </defs>
   <!-- Background -->
-  <circle cx="100" cy="100" r="100" fill="#2A2D3A"/>
+  <circle cx="100" cy="100" r="100" fill="url(#bg)"/>
   <g clip-path="url(#circle-clip)">
     <!-- Robot head / speech bubble -->
-    <rect x="35" y="45" width="130" height="95" rx="35" ry="35" fill="url(#bg)"/>
-    <!-- Inner face (white speech bubble) -->
+    <rect x="35" y="45" width="130" height="95" rx="35" ry="35" fill="#D4D4D4"/>
+    <!-- Inner face -->
     <rect x="48" y="58" width="104" height="70" rx="28" ry="28" fill="white"/>
     <!-- Speech bubble tail -->
     <polygon points="65,128 80,128 58,152" fill="white"/>
     <!-- Eyes -->
-    <circle cx="78" cy="90" r="13" fill="#5C2D82"/>
-    <circle cx="122" cy="90" r="13" fill="#5C2D82"/>
+    <circle cx="78" cy="90" r="13" fill="#2A2A2A"/>
+    <circle cx="122" cy="90" r="13" fill="#2A2A2A"/>
     <!-- Eye shine -->
     <circle cx="83" cy="85" r="4" fill="white" opacity="0.5"/>
     <circle cx="127" cy="85" r="4" fill="white" opacity="0.5"/>
     <!-- Antenna -->
-    <line x1="100" y1="30" x2="100" y2="46" stroke="#ccc" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="100" cy="25" r="8" fill="#ccc"/>
+    <line x1="100" y1="30" x2="100" y2="46" stroke="#D4D4D4" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="100" cy="25" r="8" fill="#C8963E"/>
   </g>
 </svg>
