@@ -6,9 +6,9 @@
   const WEBHOOK_URL = script?.getAttribute('data-webhook-url') || 'https://afninc.app.n8n.cloud/webhook/sophia-chat';
   const LO_ID = script?.getAttribute('data-lo-id') || '';
   const STORAGE_KEY = 'sophia_chat_session';
-  const BRAND_PRIMARY = '#1a3a5c';
-  const BRAND_ACCENT = '#C41230';
-  const BRAND_LIGHT = '#f0f4f8';
+  const BRAND_PRIMARY = '#1A1A1A';
+  const BRAND_ACCENT = '#C8963E';
+  const BRAND_LIGHT = '#F5F0E8';
 
   // --- Session ---
   function getSessionId() {
@@ -68,7 +68,7 @@
     }
 
     .sophia-header {
-      background: linear-gradient(135deg, ${BRAND_PRIMARY}, #2a5a8c);
+      background: linear-gradient(135deg, ${BRAND_PRIMARY}, #3A3A3A);
       color: white; padding: 16px 20px; display: flex; align-items: center; gap: 12px;
       flex-shrink: 0;
     }
@@ -143,7 +143,7 @@
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0; transition: background 0.2s;
     }
-    .sophia-send:hover { background: #2a5a8c; }
+    .sophia-send:hover { background: #B5832F; }
     .sophia-send:disabled { background: #ccc; cursor: default; }
     .sophia-send svg { width: 18px; height: 18px; }
 
