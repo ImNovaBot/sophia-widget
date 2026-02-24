@@ -21,7 +21,7 @@
   }
 
   // --- Avatar Image ---
-  const SOPHIA_AVATAR_URL = 'https://raw.githubusercontent.com/ImNovaBot/sophia-widget/main/sophia-icon.jpg';
+  const SOPHIA_AVATAR_URL = 'https://raw.githubusercontent.com/ImNovaBot/sophia-widget/main/sophia-icon.svg';
   const SOPHIA_AVATAR = `<img src="${SOPHIA_AVATAR_URL}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;" alt="Sophia"/>`;
 
   // --- Styles ---
